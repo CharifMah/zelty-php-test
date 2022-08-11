@@ -55,13 +55,13 @@ return function (App $app, Request $request) {
     $errorMiddleware = $app->addErrorMiddleware($displayErrorDetails, false, false);
     $errorMiddleware->setDefaultErrorHandler($errorHandler);
 
-    // Add Security Middleware(s)    (End of Stack = executed first)
-    $app->addMiddleware(
-        new HttpAuthenticationHandler(
-            $app->getContainer(),
-            $errorHandler,
-            $displayErrorDetails,
-            new UsersRepository($app->getContainer()->get(\Doctrine\ORM\EntityManager::class))
-        )
-    );
+    // // Add Security Middleware(s)    (End of Stack = executed first)
+    // $app->addMiddleware(
+    //     new HttpAuthenticationHandler(
+    //         $app->getContainer(),
+    //         $errorHandler,
+    //         $displayErrorDetails,
+    //         new UsersRepository($app->getContainer()->get(\Doctrine\ORM\EntityManager::class))
+    //     )
+    // );
 };
