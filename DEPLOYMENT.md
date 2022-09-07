@@ -11,9 +11,7 @@ sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-opcache 
 ```
 sudo update-alternatives --config php
 ```
-3. **install last composer version**
-
-4. **run composer install**
+3. **run composer install**
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
