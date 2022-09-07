@@ -20,6 +20,9 @@ php -r "if (hash_file('SHA384', 'composer-setup.php') === '$COMPOSER') { echo 'I
 sudo apt-get install curl php-cli php-mbstring git unzip
 
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+
+composer dump-autoload
+
 ```
 4. At project root run
 ```bash
