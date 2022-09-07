@@ -7,7 +7,15 @@ sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-opcache 
 
 3. run composer install
 ```bash
-composer install
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+
+COMPOSER=55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae
+
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '$COMPOSER') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+
+sudo apt-get install curl php-cli php-mbstring git unzip
+
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 ```
 4. At project root run
 ```bash
