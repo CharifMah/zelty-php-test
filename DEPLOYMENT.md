@@ -21,6 +21,8 @@ sudo apt-get install curl php-cli php-mbstring git unzip
 
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
+composer update
+
 composer dump-autoload
 
 ```
