@@ -1,11 +1,15 @@
 # Installation
-1. install php and its needed extensions (**WARNING:** PHP version 7.4 is needed for this project to run.)
+1. **install php and its needed extensions (**WARNING:** PHP version 7.4 is needed for this project to run.)**
 ```bash
 sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mbstring php7.4-sqlite3 php7.4-xml
 ```
-2. **install last composer version**
+2. **select the right php version**
+```
+sudo update-alternatives --config php
+```
+3. **install last composer version**
 
-3. run composer install
+4. **run composer install**
 ```bash
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
 
