@@ -1,6 +1,10 @@
 # Installation
 1. **install php and its needed extensions (**WARNING:** PHP version 7.4 is needed for this project to run.)**
 ```bash
+sudo apt install software-properties-common apt-transport-https -y
+
+sudo add-apt-repository ppa:ondrej/php -y
+
 sudo apt-get install php7.4 php7.4-cli php7.4-common php7.4-json php7.4-opcache php7.4-mbstring php7.4-sqlite3 php7.4-xml
 ```
 2. **select the right php version**
